@@ -22,6 +22,12 @@ object Dependencies {
     val lifeCycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.jetpackLifeCycle}"
     val lifeCycleCommonJava8 = "androidx.lifecycle:lifecycle-common-java8:${Versions.jetpackLifeCycle}"
 
+    /* Jetpack Room Component */
+    val roomRuntime = "androidx.room:room-runtime:${Versions.jetpackRoom}"
+    val roomCompiler = "androidx.room:room-compiler:${Versions.jetpackRoom}"
+    val roomTesting = "androidx.room:room-testing:${Versions.jetpackRoom}"
+    val roomRxJava = "androidx.room:room-rxjava2:${Versions.jetpackRoom}"
+
     /* Jetpack Navigation Component */
     val navigationFragment = "androidx.navigation:navigation-fragment:${Versions.jetpackNavigation}"
     val navigationFragmentKtx = "androidx.navigation:navigation-fragment-ktx:${Versions.jetpackNavigation}"
