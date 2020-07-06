@@ -6,7 +6,7 @@ object Const {
     const val BASE_URL: String = "https://api.openweathermap.org/"
 
     // The extra URL used for Open Cities API service.
-    const val OpenCities_URL: String = "https://my-json-server.typicode.com/YUSMLE/FarazpardazanWeather/"
+    const val OPEN_CITIES_URL: String = "https://my-json-server.typicode.com/YUSMLE/FarazpardazanWeather/"
 
     // The API Key required for Open Weather API services.
     const val API_KEY = "5e1e0769cd4f76cb00e9f302c35a69d1"
