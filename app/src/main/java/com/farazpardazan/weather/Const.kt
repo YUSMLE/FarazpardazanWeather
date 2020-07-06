@@ -9,5 +9,12 @@ object Const {
     const val API_KEY = "5e1e0769cd4f76cb00e9f302c35a69d1"
 
     // The language specification for Open Weather API services.
-    const val LANGUAGE = "en-US"
+    const val LANGUAGE = "en"
+
+    /**
+     * For temperature in Fahrenheit, use units=imperial,
+     * For temperature in Celsius, use units=metric,
+     * Kelvin is used by default, so there is no need to use the units parameter in the API call if you want this.
+     */
+    const val MEASUREMENT_UNIT = "metric"
 }
