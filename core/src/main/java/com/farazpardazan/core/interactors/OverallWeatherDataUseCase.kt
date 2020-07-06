@@ -7,6 +7,6 @@ import javax.inject.Inject
 
 class OverallWeatherDataUseCase @Inject constructor(private val weatherRepository: WeatherRepository) {
 
-    suspend operator fun invoke(): Resource<OverallWeatherData> =
-        weatherRepository.getOverallWeatherData()
+    suspend operator fun invoke(lat: Double, lon:Double): Resource<OverallWeatherData> =
+        weatherRepository.getOverallWeatherData(lat, lon)
 }

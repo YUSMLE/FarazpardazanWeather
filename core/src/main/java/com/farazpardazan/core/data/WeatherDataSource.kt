@@ -5,5 +5,5 @@ import com.farazpardazan.core.domain.Resource
 
 interface WeatherDataSource {
 
-    suspend fun getOverallWeatherData(): Resource<OverallWeatherData>
+    suspend fun getOverallWeatherData(lat: Double, lon:Double): Resource<OverallWeatherData>
 }
