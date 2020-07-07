@@ -15,10 +15,21 @@ import org.junit.Assert.*
  */
 @RunWith(AndroidJUnit4::class)
 class ExampleInstrumentedTest {
+
     @Test
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.farazpardazan.weather", appContext.packageName)
+    }
+
+    @Test
+    fun testOpenCitiesUseCase() {
+        TODO("Not yet implemented")
+    }
+
+    @Test
+    fun testOverallWeatherDataUseCase() {
+        TODO("Not yet implemented")
     }
 }

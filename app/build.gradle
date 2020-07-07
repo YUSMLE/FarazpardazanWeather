@@ -92,6 +92,12 @@ dependencies {
     implementation Dependencies.lifeCycleExtensions
     kapt Dependencies.lifeCycleCommonJava8
 
+    /* Jetpack Room Component */
+    implementation Dependencies.roomRuntime
+    kapt Dependencies.roomCompiler
+    androidTestImplementation Dependencies.roomTesting
+    implementation Dependencies.roomRxJava
+
     /* Jetpack Navigation Component */
     implementation Dependencies.navigationFragment
     implementation Dependencies.navigationFragmentKtx

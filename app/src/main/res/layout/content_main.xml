@@ -1,19 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <fragment
-            android:id="@+id/nav_host_fragment"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:defaultNavHost="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:navGraph="@navigation/nav_graph" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <data>
+
+        <variable
+                name="viewState"
+                type="com.farazpardazan.weather.presentation.viewstate.WeatherDataVS" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            android:padding="0dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".presentation.view.ui.MainActivity"
+            tools:showIn="@layout/activity_main">
+
+        <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                        android:id="@+id/currentWeatherPanel"
+                        android:layout_width="match_parent"
+                        android:layout_height="256dp"
+                        android:background="#AAAAAA">
+
+                    <TextView
+                            android:id="@+id/currentTemp"
+                            android:layout_width="128dp"
+                            android:layout_height="64dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="32dp"
+                            android:gravity="left|center_vertical"
+                            android:hint="23°"
+                            android:text="@{viewState.overallWeatherData.current.temp.toString()}"/>
+
+                    <TextView
+                            android:id="@+id/todayRange"
+                            android:layout_width="128dp"
+                            android:layout_height="64dp"
+                            android:layout_below="@+id/currentTemp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="left|center_vertical"
+                            android:text="24°/19°" />
+
+                    <TextView
+                            android:id="@+id/currentCity"
+                            android:layout_width="128dp"
+                            android:layout_height="64dp"
+                            android:layout_below="@+id/todayRange"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="left|center_vertical"
+                            android:text="New York" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/hourlyWeatherPanel"
+                        android:layout_width="match_parent"
+                        android:layout_height="128dp"
+                        android:background="#BBBBBB">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:id="@+id/dailyWeatherPanel"
+                        android:layout_width="match_parent"
+                        android:layout_height="512dp"
+                        android:background="#CCCCCC">
+
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

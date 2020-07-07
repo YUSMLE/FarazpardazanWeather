@@ -21,6 +21,7 @@ object Versions {
 
     /* Jetpack Architecture Components */
     const val jetpackLifeCycle = "2.2.0"
+    const val jetpackRoom = "2.2.5"
     const val jetpackNavigation = "2.3.0-alpha03"
 
     /* Reactive Extensions */
