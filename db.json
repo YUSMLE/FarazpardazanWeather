@@ -1,0 +1,73 @@
+{
+  "open_cities": [
+    {
+      "id": 112931,
+      "name": "Tehran",
+      "state": "",
+      "country": "IR",
+      "coord": {
+        "lon": 51.421509,
+        "lat": 35.694389
+      }
+    },
+    {
+      "id": 418862,
+      "name": "Isfahan",
+      "state": "",
+      "country": "IR",
+      "coord": {
+        "lon": 52.166672,
+        "lat": 33
+      }
+    },
+    {
+      "id": 115019,
+      "name": "Shiraz",
+      "state": "",
+      "country": "IR",
+      "coord": {
+        "lon": 52.538799,
+        "lat": 29.6036
+      }
+    },
+    {
+      "id": 124665,
+      "name": "Mashhad",
+      "state": "",
+      "country": "IR",
+      "coord": {
+        "lon": 59.606201,
+        "lat": 36.297001
+      }
+    },
+    {
+      "id": 113646,
+      "name": "Tabriz",
+      "state": "",
+      "country": "IR",
+      "coord": {
+        "lon": 46.291901,
+        "lat": 38.080002
+      }
+    },{
+      "id": 132892,
+      "name": "Gorgān",
+      "state": "",
+      "country": "IR",
+      "coord": {
+        "lon": 54.43475,
+        "lat": 36.838661
+      }
+    },
+    {
+      "id": 132938,
+      "name": "Gonbad-e Kāvūs",
+      "state": "",
+      "country": "IR",
+      "coord": {
+        "lon": 55.16721,
+        "lat": 37.250038
+      }
+    }
+  ]
+}
